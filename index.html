@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class = "wrapper">
+        <div id = "container" class="container hidden">
+            <div class="title-container">
+                <div class="title-name">
+                    <h1>Geo<span><i class="fa-solid fa-earth-americas"></i></span> Quiz</h1>
+                </div>
+                <div class="title-score">
+                    <p>Score : </p>
+                    <!-- <h1 id = "score" value = 100></h1> -->
+                    <input type="text" id = "score" value = 0  readonly>
+                </div>
+            </div>
+            <div class = "question-container">
+                <p class = "question">Which countries <span>flag</span> is this?</p>
+            </div>
+            <div class = "flag-container">
+                <img class = "flag-img"id = "img" src="https://3.bp.blogspot.com/-sCTPmY04Ft0/W0ENi2S6d5I/AAAAAAAApBg/T-c6c4j8AvAB3iKm5oMfdsk6LYnoI5TuQCLcBGAs/w1200-h630-p-k-no-nu/all_country_flags_with_names.jpg" alt="">
+            </div>
+            <div class="hint-container">
+                <a id = "btn-hint" class = "hint-btn" href="#">Get a hint<span></span></a>
+                <p id = "hint" class = "hint hide-hint">This country somewhere in <spani id = "hintAnswer">Asia</spani></p>
+            </div>
+            <div class="answers-container">
+                <div id = "answers" class = "answers">
+                    <a href = "#" id = "var1" class = "answer ">
+                        <span>A</span>Variant 1
+                        <span id = "correctIncorrect" class = "correct-incorrect hidden">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                    </a>
+
+                    <a href = "#" id = "var2" class = "answer ">
+                        <span>B</span>Variant 2
+                        <span id = "correctIncorrect" class = "correct-incorrect hidden">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                    </a>
+
+                    <a  href = "#" id = "var3" class = "answer">
+                        <span>C</span>Variant 3
+                        <span id = "correctIncorrect" class = "correct-incorrect hidden">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                    </a>
+
+                    <a href = "#"  id = "var4"class = "answer">
+                        <span>D</span>Variant 4
+                        <span id = "correctIncorrect" class = "correct-incorrect hidden">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                    </a> 
+                </div>
+            </div>
+            <div class="next-btn-container">
+                <a href="#" id = "next-btn"class = "next-btn">Next Question</a>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <div class="btn-container">
+        <button class = "btn-start " id = "btn-start">Start QUIZ</button>
+    </div>
+    
+    <!-- <input readonly type="text" id = "score" value = 0> -->
+    
+
+    <script src="https://kit.fontawesome.com/0b0db4d2c6.js" crossorigin="anonymous"></script>
+
+    <script   src="app.js"></script>
+</body>
+</html>
